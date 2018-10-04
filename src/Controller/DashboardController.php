@@ -17,15 +17,15 @@ class DashboardController extends Controller
       $repository = $this->getDoctrine()->getRepository(TMenu::class);
       $TMenus = $repository->findAll();
 
-       $repository = $this->getDoctrine()->getRepository(TSousMenu::class);
-       $TSousMenus = $repository->findAll();
+     //  $repository = $this->getDoctrine()->getRepository(TSousMenu::class);
+      // $TSousMenus = $repository->findAll();
        
 
 
          return $this->render('dashboard/index.html.twig', array(
                     'controller_name' => 'DashboardController',
                     'TMenus' => $TMenus,
-                    'TSousMenus' => $TSousMenus,
+                  //  'TSousMenus' => $TSousMenus,
         ));
     }
     public function recentArticles($max = 3)
