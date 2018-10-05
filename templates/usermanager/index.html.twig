@@ -1,0 +1,35 @@
+{% extends 'dashboard/index.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block content %}
+ <div class="box">
+    <div class="box-header">
+      <h2>Utilisateurs</h2>
+    </div>
+    <div class="table-responsive">
+      <table ui-jp="dataTable" ui-options="{
+          sAjaxSource: 'api/usermanager/userlist.json',
+          aoColumns: [
+            { mData: 'strLogin' },
+            { mData: 'strFirstName' },
+            { mData: 'strLastName' },
+            { mData: 'roles' },
+            { mData: 'strLastConnectionDate' }
+          ]
+        }" class="table table-striped b-t b-b">
+        <thead>
+          <tr>
+            <th  style="width:20%">Login</th>
+            <th  style="width:25%">Nom</th>
+            <th  style="width:25%">Prenom</th>
+            <th  style="width:15%">Role</th>
+            <th  style="width:15%">Dern.Con</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}

@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 /**
  * TUser
  *
@@ -284,6 +285,8 @@ class TUser implements UserInterface, \Serializable
 
     public function getStrLastConnectionDate(): ?\DateTimeInterface
     {
+        
+      // $this->strLastConnectionDate =  DateTime::createFromFormat('m/d/Y', $this->strLastConnectionDate);
         return $this->strLastConnectionDate;
     }
 

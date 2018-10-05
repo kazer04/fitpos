@@ -95,7 +95,7 @@
                                         {% for OTSousMenu in OTMenus.sousMenu %}
 
                                             <li>
-                                                <a href="calendar.html" >
+                                                <a href="{{ (OTSousMenu.strComposant)}}" >
                                                     <span class="nav-text">{{ (OTSousMenu.strDescription)}}</span>
                                                 </a>
                                             </li>
@@ -128,7 +128,7 @@
                                 <span class="block _500">
 
                                     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                                     {{ app.user.strLastName }}  {{ app.user.strFirstName }} 
+                                        {{ app.user.strLastName }}  {{ app.user.strFirstName }} 
                                     {% endif %}
 
                                 </span>
@@ -238,7 +238,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="padding">
+
+                <!--  
+                  DEBUT CONTENT
+                -->
+                {% block content %}
+   <div class="padding">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <div class="box p-a">
@@ -825,7 +830,10 @@
                         </div>
                     </div>
                 </div>
-
+                {% endblock %}
+                <!--  
+                                 END CONTENT
+                -->
                 <!-- ############ PAGE END-->
 
             </div>

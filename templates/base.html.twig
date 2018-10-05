@@ -7,21 +7,21 @@
 <html lang="{{ app.request.locale }}">
     <head>
         <meta charset="UTF-8" />
-        
-         <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-  <link rel="apple-touch-icon" href="{{ asset('assets/images/logo.png') }}">
-  <meta name="apple-mobile-web-app-title" content="Flatkit">
-  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" sizes="196x196" href="{{ asset('assets/images/logo.png') }}">
+        <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+        <link rel="apple-touch-icon" href="{{ asset('assets/images/logo.png') }}">
+        <meta name="apple-mobile-web-app-title" content="Flatkit">
+        <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" sizes="196x196" href="{{ asset('assets/images/logo.png') }}">
         <title>{% block title %}Symfony Demo application{% endblock %}</title>
-       
+
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('build/css/app44.css') }}">
             <link rel="stylesheet" href="{{ asset('assets/animate.css/animate.min.css') }}">
@@ -32,7 +32,7 @@
 
             <link rel="stylesheet" href="{{ asset('assets/styles/app.css') }}">
             <link rel="stylesheet" href="{{ asset('assets/styles/font.css') }}">
- <link rel="stylesheet" href="{{ asset('assets/styles/font.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/styles/font.css') }}">
 
 
 
@@ -46,24 +46,24 @@
 
         {% block header %}
             <header>
-                
+
             </header>
         {% endblock %}
 
         <div class="container444 body-container111">
             {% block body %}
 
-{% block main %}
+                {% block main %}
 
-{% endblock %}
+                {% endblock %}
 
-       
+
             {% endblock %}
         </div>
 
         {% block footer %}
             <footer>
-                
+
             </footer>
         {% endblock %}
 
@@ -73,42 +73,42 @@
             <script src="{{ asset('build/js/app11.js') }}"></script>
 
 
-             <script src="{{ asset('libs/jquery/jquery/dist/jquery.js') }}"></script>
-              <script src="{{ asset('libs/jquery/tether/dist/js/tether.min.js') }}"></script>
-               <script src="{{ asset('libs/jquery/bootstrap/dist/js/bootstrap.js') }}"></script>
+            <script src="{{ asset('libs/jquery/jquery/dist/jquery.js') }}"></script>
+            <script src="{{ asset('libs/jquery/tether/dist/js/tether.min.js') }}"></script>
+            <script src="{{ asset('libs/jquery/bootstrap/dist/js/bootstrap.js') }}"></script>
 
 
-               <script src="{{ asset('libs/jquery/underscore/underscore-min.js') }}"></script>
-               <script src="{{ asset('libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js') }}"></script>
-               <script src="{{ asset('libs/jquery/PACE/pace.min.js') }}"></script>
-               <script src="{{ asset('libs/jquery/jquery-pjax/jquery.pjax.js') }}"></script>
-               <script src="{{ asset('scripts/ajax.js') }}"></script>
+            <script src="{{ asset('libs/jquery/underscore/underscore-min.js') }}"></script>
+            <script src="{{ asset('libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js') }}"></script>
+            <script src="{{ asset('libs/jquery/PACE/pace.min.js') }}"></script>
+            <script src="{{ asset('libs/jquery/jquery-pjax/jquery.pjax.js') }}"></script>
+            <script src="{{ asset('scripts/ajax.js') }}"></script>
 
 
-  <script src="{{ asset('scripts/config.lazyload.js') }}"></script>
+            <script src="{{ asset('scripts/config.lazyload.js') }}"></script>
 
-  <script src="{{ asset('scripts/palette.js') }}"></script>
-  <script src="{{ asset('scripts/ui-load.js') }}"></script>
-  <script src="{{ asset('scripts/ui-jp.js') }}"></script>
-  <script src="{{ asset('scripts/ui-include.js') }}"></script>
-  <script src="{{ asset('scripts/ui-device.js') }}"></script>
-  <script src="{{ asset('scripts/ui-form.js') }}"></script>
-  <script src="{{ asset('scripts/ui-nav.js') }}"></script>
-  <script src="{{ asset('scripts/ui-screenfull.js') }}"></script>
-  <script src="{{ asset('scripts/ui-scroll-to.js') }}"></script>
-  <script src="{{ asset('scripts/ui-toggle-class.js') }}"></script>
+            <script src="{{ asset('scripts/palette.js') }}"></script>
+            <script src="{{ asset('scripts/ui-load.js') }}"></script>
+            <script src="{{ asset('scripts/ui-jp.js') }}"></script>
+            <script src="{{ asset('scripts/ui-include.js') }}"></script>
+            <script src="{{ asset('scripts/ui-device.js') }}"></script>
+            <script src="{{ asset('scripts/ui-form.js') }}"></script>
+            <script src="{{ asset('scripts/ui-nav.js') }}"></script>
+            <script src="{{ asset('scripts/ui-screenfull.js') }}"></script>
+            <script src="{{ asset('scripts/ui-scroll-to.js') }}"></script>
+            <script src="{{ asset('scripts/ui-toggle-class.js') }}"></script>
 
-  <script src="{{ asset('scripts/app.js') }}"></script>
+            <script src="{{ asset('scripts/app.js') }}"></script>
 
-  <!-- ajax -->
-  <script src="{{ asset('libs/jquery/jquery-pjax/jquery.pjax.js') }}"></script>
-  <script src="{{ asset('scripts/ajax.js') }}"></script>
+            <!-- ajax -->
+            <script src="{{ asset('libs/jquery/jquery-pjax/jquery.pjax.js') }}"></script>
+            <script src="{{ asset('scripts/ajax.js') }}"></script>
 
         {% endblock %}
 
         {# it's not mandatory to set the timezone in localizeddate(). This is done to
            avoid errors when the 'intl' PHP extension is not available and the application
            is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
-       
+
     </body>
 </html>
