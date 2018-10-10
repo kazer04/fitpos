@@ -5,18 +5,17 @@
 {% block content %}
     <div class="box">
         <div class="box-header">
-            <h2><span>Utilisateurs    <a href='../users/add' class="md-btn md-raised m-b-sm w-xs indigo">ADD</a></span></h2>
+            <h2><span>Role    <a href='../roles/add' class="md-btn md-raised m-b-sm w-xs indigo">ADD</a></span></h2>
         </div>
         <div class="table-responsive">
             <table ui-jp="dataTable" ui-options="{
-                   sAjaxSource: '/api/users/list.json',
+                   sAjaxSource: '/api/roles/list.json',
                    aoColumns: [
-                   { mData: 'strLogin' },
-                   { mData: 'strFirstName' },
-                   { mData: 'strLastName' },
-                   { mData: 'strRoleForm' },
-                   { mData: 'strStrtLastConnectionDate' }
-                   ,
+                   { mData: 'strName' },
+                   { mData: 'strDesignation' },
+                   { mData: 'strType' },
+                   { mData: 'strStatut' },
+                   { mData: 'strdtCreated' },
                    { mData: 'stractionEDIT' },
                    { mData: 'stractionDELETE' }
 
@@ -24,11 +23,11 @@
                    }"   class="table table-striped b-t b-b">
                 <thead>
                     <tr>
-                        <th  style="width:20%">Login</th>
-                        <th  style="width:20%">Nom</th>
-                        <th  style="width:15%">Prenom</th>
-                        <th  style="width:15%">Role</th>
-                        <th  style="width:20%">Dern.Con</th>
+                        <th  style="width:20%">Libelle</th>
+                        <th  style="width:20%">Description</th>
+                        <th  style="width:15%">Type</th>
+                        <th  style="width:15%">Statut</th>
+                        <th  style="width:20%">Date.Creation</th>
                         <th  style="width:15%">act1</th>
                         <th  style="width:15%">act2</th>
                     </tr>
